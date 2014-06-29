@@ -1,5 +1,5 @@
 
-# find-indexof
+# find-index
 
 finds an item in an array matching a predicate function,
 and returns its index
@@ -8,14 +8,14 @@ fast both when `thisArg` is used and also when it isn't: [jsPerf](http://jsperf.
 
 ### usage
 ```bash
-npm install find-indexof
+npm install find-index
 ```
 ```js
-findIndexOf = require('find-indexof')
-findLastIndexOf = require('find-indexof/last')
+findIndex = require('find-index')
+findLastIndex = require('find-index/last')
 ```
-    findIndexOf(array, callback[, thisArg])
-    findLastIndexOf(array, callback[, thisArg])
+    findIndex(array, callback[, thisArg])
+    findLastIndex(array, callback[, thisArg])
     Parameters:
       array
         The array to operate on.
