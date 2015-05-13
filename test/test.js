@@ -8,6 +8,12 @@ cases['lodash'] = require('lodash.findindex');
 
 cases['array-findindex'] = require('array-findindex');
 
+if (typeof Array.prototype.findIndex === 'function') {
+  cases['array.findIndex'] = function (array, predicate, context) {
+    return array.findIndex(predicate, context);
+  };
+}
+
 // test setup
 var testNumValues = 1000;
 
