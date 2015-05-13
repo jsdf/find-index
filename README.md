@@ -5,18 +5,21 @@
 
 **Ponyfill: A polyfill that doesn't overwrite the native method.**
 
-finds an item in an array matching a predicate function,
-and returns its index
+Finds an item in an array matching a predicate function, and returns its index.
 
-fast both when `thisArg` is used and also when it isn't: [jsPerf](http://jsperf.com/array-prototype-findindex-shims)
+Fast both when `thisArg` is used and also when it isn't: 
+[jsPerf](http://jsperf.com/array-prototype-findindex-shims)
 
 ### usage
+
 ```bash
 npm install find-index
 ```
+
 ```js
-findIndex = require('find-index')  // Will use `array.findIndex` if available.
-findLastIndex = require('find-index/last')
+var findIndex = require('find-index')  // will use native Array#findIndex if available.
+var findIndex = require('find-index/findIndex')  // won't defer to native implementation
+var findLastIndex = require('find-index/last') // search backwards from end
 ```
     findIndex(array, callback[, thisArg])
     findLastIndex(array, callback[, thisArg])
@@ -34,4 +37,4 @@ findLastIndex = require('find-index/last')
       thisArg
         Object to use as this when executing callback.
 
-based on [array-findindex](https://www.npmjs.org/package/array-findindex)
+Based on [array-findindex](https://www.npmjs.org/package/array-findindex)
