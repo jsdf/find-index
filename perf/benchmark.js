@@ -1,6 +1,6 @@
 var cases = {};
 
-cases['find-index'] = require('../index')
+cases['find-index'] = require('../findIndex');
 
 cases['find-index/last'] = require('../last');
 

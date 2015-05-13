@@ -21,7 +21,8 @@
   },
   "devDependencies": {
     "array-findindex": "0.1.0",
-    "lodash.findindex": "3.2.0"
+    "lodash.findindex": "3.2.0",
+    "tap": "^1.0.4"
   },
   "homepage": "https://github.com/jsdf/find-index",
   "bugs": "https://github.com/jsdf/find-index/issues",
