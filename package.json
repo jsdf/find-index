@@ -17,7 +17,7 @@
     "last.js"
   ],
   "scripts": {
-    "test": "node test/test"
+    "test": "tap test"
   },
   "devDependencies": {
     "array-findindex": "0.1.0",
