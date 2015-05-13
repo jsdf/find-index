@@ -1,7 +1,7 @@
 
 # find-index
 
-**ES6 `array.findIndex` ponyfill.**
+**ES6 `Array#findIndex` ponyfill**
 
 **Ponyfill: A polyfill that doesn't overwrite the native method.**
 
