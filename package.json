@@ -5,7 +5,12 @@
   "main": "index.js",
   "keywords": [
     "array",
-    "findindex"
+    "findindex",
+    "es6",
+    "es2015",
+    "ponyfill",
+    "polyfill",
+    "find"
   ],
   "files": [
     "index.js",

@@ -1,6 +1,10 @@
 
 # find-index
 
+**ES6 `array.findIndex` ponyfill.**
+
+**Ponyfill: A polyfill that doesn't overwrite the native method.**
+
 finds an item in an array matching a predicate function,
 and returns its index
 
@@ -11,7 +15,7 @@ fast both when `thisArg` is used and also when it isn't: [jsPerf](http://jsperf.
 npm install find-index
 ```
 ```js
-findIndex = require('find-index')
+findIndex = require('find-index')  // Will use `array.findIndex` if available.
 findLastIndex = require('find-index/last')
 ```
     findIndex(array, callback[, thisArg])

@@ -1,4 +1,9 @@
 function findIndex(array, predicate, self) {
+  // Use the native ES6 `Array.findIndex` if available.
+  if (typeof Array.prototype.findIndex === 'function') {
+    return array.findIndex(predicate, self);
+  }
+
   var len = array.length;
   var i;
   if (len === 0) return -1;
