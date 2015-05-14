@@ -39,7 +39,7 @@ Based on [array-findindex](https://www.npmjs.org/package/array-findindex)
 
 ### performance
 
-```js
+```bash
 $ iojs --harmony_arrays perf/benchmark.js
 
 native Array.prototype.findIndex: 6347ms
