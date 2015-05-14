@@ -6,8 +6,7 @@ doesn't overwrite the native method).
 
 Finds an item in an array matching a predicate function, and returns its index.
 
-Fast both when `thisArg` is used and also when it isn't: 
-[jsPerf](http://jsperf.com/array-prototype-findindex-shims)
+Fast both when `thisArg` is used and also when it isn't.
 
 ### usage
 
