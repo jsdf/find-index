@@ -1,8 +1,8 @@
 
 # find-index
 
-ES6 `Array#findIndex` as a standalone module and a **ponyfill** (a polyfill that 
-doesn't overwrite the native method).
+An implementation of the ES6 method `Array.prototype.findIndex` as a standalone module and a 
+*ponyfill* (a polyfill that doesn't overwrite the native method).
 
 Finds an item in an array matching a predicate function, and returns its index.
 
