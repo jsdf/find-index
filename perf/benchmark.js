@@ -1,18 +1,17 @@
 var cases = {};
 
-cases['find-index'] = require('../findIndex');
-
-cases['find-index/last'] = require('../last');
-
-cases['lodash'] = require('lodash.findindex');
-
-cases['array-findindex'] = require('array-findindex');
-
 if (typeof Array.prototype.findIndex === 'function') {
-  cases['array.findIndex'] = function (array, predicate, context) {
+  cases['native Array.prototype.findIndex'] = function (array, predicate, context) {
     return array.findIndex(predicate, context);
   };
 }
+
+cases['findIndex'] = require('../findIndex');
+cases['findIndex ponyfill'] = require('../ponyfill');
+cases['findLastIndex'] = require('../findLastIndex');
+
+cases['npm lodash.findindex'] = require('lodash.findindex');
+cases['npm array-findindex'] = require('array-findindex');
 
 // test setup
 var testNumValues = 1000;
