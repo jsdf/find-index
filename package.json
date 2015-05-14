@@ -12,10 +12,6 @@
     "polyfill",
     "find"
   ],
-  "files": [
-    "index.js",
-    "last.js"
-  ],
   "scripts": {
     "test": "tap test"
   },
