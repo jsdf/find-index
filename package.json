@@ -1,6 +1,6 @@
 {
   "name": "find-index",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "finds an item in an array matching a predicate function, and returns its index",
   "main": "index.js",
   "keywords": [
